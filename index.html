@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla De Frecuencia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div
+      class="container d-flex align-items-center flex-column justify-content-center"
+      style="width: 100%; height: auto"
+    >
+    <h4 class="text-center fw-bold text-uppercase p-2">Tabla De frecuencia</h4>
+      <form
+        class="card mt-2 d-flex flex-column justify-content-center align-items-center"
+        style="width: 300px; height: auto"
+      >
+        <div class="card-header">
+          <h3 class="text-uppercase text-center- p-2">Datos</h3>
+        </div>
+        <div class="card-body">
+          <div class="input-group mt-2">
+            <label class="input-group-text">n</label>
+            <input
+              class="form-control"
+              type="number"
+              id="n"
+              placeholder="0"
+              autofocus
+              required
+            />
+          </div>
+          <div class="input-group mt-2">
+            <label class="input-group-text">Xmax</label>
+            <input
+              class="form-control"
+              type="number"
+              id="xmax"
+              placeholder="0"
+              required
+            />
+          </div>
+          <div class="input-group mt-2">
+            <label class="input-group-text">Xmin</label>
+            <input
+              class="form-control"
+              type="number"
+              id="xmin"
+              placeholder="0"
+              required
+            />
+          </div>
+          <div class="input-group mt-2">
+            <label class="input-group-text">NC</label>
+            <input
+              class="form-control"
+              type="number"
+              id="NC"
+              placeholder="0"
+              required
+            />
+          </div>
+          <div class="input-group mt-2">
+            <label class="input-group-text">IC</label>
+            <input
+              class="form-control"
+              type="number"
+              id="IC"
+              placeholder="0"
+              required
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button
+            id="btn-tabla"
+            class="bg-success p-2 rounded-2 text-white text-center border-0"
+          >
+            Crear Tabla
+          </button>
+          <button
+            type="reset"
+            class="bg-secondary p-2 rounded-2 text-white text-center border-0"
+          >
+            Limpiar
+          </button>
+        </div>
+      </form>
+    <h5 class="text-center text-uppercase text-primary p-2">Tabla de Frecuencia</h5>
+      <table class="table p-1 mt-2" style="width: 400px;">
+        <thead>
+            <tr>
+                <th>Clases</th>
+                <th>fi</th>
+                <th>fr</th>
+                <th>Fi</th>
+                <th>Fr</th>
+                <th>Xi</th>
+            </tr>
+        </thead>
+        <tbody id="table-data">
+            <tr>
+                <td class="text-center fw-bold text-danger" colspan="6">SIN DATOS</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <h5 class="text-center text-uppercase text-primary">Gráfica de Datos</h5>
+    <div class="graph" id="graph">
+        <p class="fw-bold">Presione "Crear Tabla" para generar el grafico</p>    
+     </div>
+     <p class="p-10 text-center">~Desarrollador: Luis Angel Fernández</p>
+    <!--SCRIPTS APP-->
+    <script src="./js/index.js"></script>
+    <!--SCRIPTS BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
